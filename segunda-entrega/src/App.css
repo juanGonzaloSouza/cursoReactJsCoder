@@ -7,11 +7,7 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -28,6 +24,7 @@
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +33,234 @@
     transform: rotate(360deg);
   }
 }
+
+.logo{
+  height: 70px;
+  padding-right: 2rem;
+  align-items: flex-start;
+}
+
+.menuNavegacion{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.alineacionEnvios{
+  display: flex;
+  flex-direction: row;
+  padding-right: 10rem;
+  align-items: center;
+}
+.alineacionParrafo{
+  padding-top: 15px;
+  padding-left: .5rem;
+}
+
+.imagenCaroussel{
+  height: 300px;
+}
+
+.botonCarrito{
+  background-color: #1a8a5f;
+  border: none;
+  border-radius: .5rem;
+  color: white;
+}
+
+.bannerContenedor{
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  background-color: #c9d8d2;
+}
+
+.bannerAlineacion{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bannerAlineacionTexto{
+  padding-top: 1rem;
+  padding-left: .5rem;
+}
+
+.imagen__alto{
+  height: 200px;
+  padding: .5rem;
+}
+
+.contenedorProductos{
+ background-color: #282c34;
+ display: flex;
+ flex-direction: row;
+}
+
+.links{
+  text-decoration: none;
+  color: black;
+
+}
+
+.productContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.botonDetalle{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: .8rem;
+  background-color: #2dda97;
+  color: white;
+  border: none;
+  border-radius: .2rem;
+  text-decoration: none;
+}
+
+.botonDetalle:hover{
+  background-color: #1a8a5f;
+}
+
+
+.imagenDetail{
+  height: 320px;
+}
+
+.contador{
+  color: #eb0808;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.alineacionProductos{
+  display: flex;
+  flex-direction: row;
+  margin: 10rem;
+}
+
+.botonesPequenos{
+  background-color: #1a8a5f;
+  color: #c9d8d2;
+  padding: .8rem;
+  border: none;
+  border-radius: .8rem;
+  margin-right: 1rem;
+}
+
+.botonesPequenos:hover{
+  background-color: #0a3f2b;
+}
+
+.botonesPequenosDos:hover{
+  background-color: #171599;
+}
+
+.botonesPequenosDos{
+  margin-top: 1rem;
+  background-color: #4c4ab6;
+  color: #c9d8d2;
+  padding: .8rem;
+  border: none;
+  border-radius: .8rem;
+  margin-right: 1rem;
+}
+
+.productoAlineacion{
+  text-align: center;
+  justify-content: space-between;
+  display: flex; 
+}
+
+
+.contenedorProductos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ItemDetailAlineacion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgb(31, 49, 41), rgb(71, 143, 115),rgb(31, 49, 41));
+  padding: 1rem;
+
+}
+
+.footerContenedor{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2rem;
+  
+}
+
+.footerAlineacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.linea{
+  background-color: #282c34;
+  height: 5px;
+}
+
+.contenedorLinks{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(223, 222, 222);
+}
+.carta{
+  border-radius: .5rem;
+  background-color: #fcfcfc;
+  
+}
+
+.linksTres{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.linkEfecto{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.linkEfectoDos{
+  text-decoration: none;
+}
+
+.botonBasura{
+  background-color: #92b1a5;
+  border: none;
+  border-radius: .5rem;
+  margin-left: 7rem;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+}
+
+.negrita{
+  font-weight: bold;
+}
+
+
+
+
