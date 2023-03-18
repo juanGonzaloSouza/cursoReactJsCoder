@@ -1,11 +1,11 @@
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { CartContext } from "../../../context/cartContext";
+import { CartContext } from "../../context/cartContext";
 
 const CartWidget = () => {
   const { productsAdded } = useContext(CartContext);
-  const count = productsAdded.length;
+const count = Array.isArray(productsAdded) ? productsAdded.length : 0;
 
   return (
     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">

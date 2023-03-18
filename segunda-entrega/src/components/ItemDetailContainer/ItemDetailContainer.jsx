@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import ItemDetail from "./ItemDetail/ItemDetail";
+import ItemDetail from "../ItemDetail/ItemDetail";
 
 import { useParams } from "react-router-dom";
-import { Items } from "../../../data/item.data";
-import { Loading } from "../../Loading/Loading";
+import { Items } from "../../data/item.data";
+import { Loading } from "../Loading/Loading";
 
 const ItemDetailContainer = () => {
   const [item, setItem] = useState(null);

@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 // Own components
-import ItemList from "./ItemList/ItemList";
-import { Loading } from "../../Loading/Loading";
+import ItemList from "../ItemList/ItemList";
+import { Loading } from "../Loading/Loading";
 
 // Mock
-import { Items } from "../../../data/item.data";
+import { Items } from "../../data/item.data";
 
 const ItemListContainer = () => {
   const { category } = useParams();

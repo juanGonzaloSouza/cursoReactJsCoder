@@ -1,21 +1,41 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './App.css';
-import ItemListContainer from "./components/Item/ItemListContainer/itemListContainer";
-import { Layout } from "./components/Layout/Layout";
+import ItemListContainer from "./components/ItemListContainer/itemListContainer";
 import Banner from './components/Banner/Banner';
-
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import Navbar from "./components/Navbar/Navbar";
+import Login from "./components/Login/Login";
+import CartWidget from "./components/CartWidget/CartWidget"
+import Footer from "./components/Footer/Footer"
 
 function App() {
   return (
-        <Layout>
-          <Banner />
-          <ItemListContainer/>
-          <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
-          <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"crossorigin></script>
-          <script src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"crossorigin></script>
-          <script>var Alert = ReactBootstrap.Alert;</script>
-          <script src="sweetalert2.all.min.js"></script>
-        </Layout>    
+    <BrowserRouter>
+      <Navbar />
+      <Banner />
+      <Footer />
+      <Routes>
+        <Route path="/" element={<ItemListContainer />} />
+
+        <Route path="/category/:category" element={<ItemListContainer />} />
+
+        <Route path="/cart" element={<CartWidget />} />
+
+        <Route path="/item/:id" element={<ItemDetailContainer />} />
+
+        <Route path="/login" element={<Login />} />
+
+        <Route path="*" element={<h1> error 404: Not found </h1>} />
+      </Routes>
+
+    </BrowserRouter>
+
+
+
+
+
+
   );
 }
 
